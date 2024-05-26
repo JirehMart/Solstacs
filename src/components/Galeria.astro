@@ -1,0 +1,332 @@
+---
+import Lightbox from "./lightbox.svelte";
+import "photoswipe/style.css";
+import { Image } from "astro:assets";
+import gallery from "@/images/gallery/gallery.jpg";
+import gallery1 from "/src/images/gallery/gallery1.jpg";
+import gallery2 from "/src/images/gallery/gallery2.jpg";
+import gallery3 from "/src/images/gallery/gallery3.jpg";
+import gallery4 from "/src/images/gallery/gallery4.jpg";
+import gallery5 from "/src/images/gallery/gallery5.jpg";
+import gallery6 from "/src/images/gallery/gallery6.jpg";
+import gallery7 from "/src/images/gallery/gallery7.jpg";
+import gallery8 from "/src/images/gallery/gallery8.jpg";
+import term1 from "/src/images/Productos/split1.jpg";
+import term2 from "/src/images/Productos/split2.jpg";
+import term3 from "/src/images/Productos/split3.jpg";
+---
+
+<section class="mx-6">
+  <div class="container mx-auto py-24" id="project">
+    <div class="section-title text-center mb-12">
+      <h6
+        class="text-4xl font-extrabold mb-3 text-orange-500 uppercase tracking-widest"
+      >
+        Galería
+      </h6>
+      <h1 class="text-xl text-orange-500 font-semibold">
+        Algunos ejemplos de instalación
+      </h1>
+    </div>
+    <div class="grid grid-cols-3 gap-4 pswp-gallery mx-6" id="gallery">
+      <div class="gallery-item">
+        <a
+          href={gallery.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={gallery}
+            alt="Imagen de galería 1"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={gallery1.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={gallery1}
+            alt="Imagen de galería 1"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={gallery2.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={gallery2}
+            alt="Imagen de galería 3"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={gallery3.src}
+          data-pswp-width="4032"
+          data-pswp-height="2725"
+          target="_blank"
+        >
+          <Image
+            src={gallery3}
+            alt="Imagen de galería 4"
+            width={4032}
+            height={2725}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={gallery4.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={gallery4}
+            alt="Imagen de galería 5"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={gallery5.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={gallery5}
+            alt="Imagen de galería 6"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={gallery6.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={gallery6}
+            alt="Imagen de galería 7"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={gallery7.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={gallery7}
+            alt="Imagen de galería 8"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={gallery8.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={gallery8}
+            alt="Imagen de galería 9"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={term1.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={term1}
+            alt="Imagen de galería 9"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={term2.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={term2}
+            alt="Imagen de galería 9"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a
+          href={term3.src}
+          data-pswp-width="4032"
+          data-pswp-height="3024"
+          target="_blank"
+        >
+          <Image
+            src={term3}
+            alt="Imagen de galería 9"
+            width={4032}
+            height={3024}
+            class="w-full rounded-lg"
+          />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section
+  class="bg-white p-4 sm:p-10 mx-4 sm:mx-10 md:mx-20 lg:mx-40 my-10 rounded-lg custom-shadow"
+>
+  <h2
+    class="text-3xl sm:text-4xl font-bold text-center mb-4 sm:mb-8 text-orange-500"
+  >
+    Preguntas Frecuentes
+  </h2>
+  <p class="text-lg sm:text-xl text-center text-gray-700 mb-5 sm:mb-10">
+    Tal vez te preguntes...
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-12">
+    <div class="p-4 sm:p-6 bg-orange-100 rounded-lg shadow-md">
+      <h3
+        class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-orange-500"
+      >
+        Sobre la Energía Solar Térmica
+      </h3>
+      <div class="space-y-4 sm:space-y-6">
+        <div>
+          <h4 class="font-semibold text-orange-600">
+            ¿Qué es la energía solar térmica?
+          </h4>
+          <p class="text-justify">
+            La energía solar térmica aprovecha el calor del sol mediante
+            colectores o paneles solares térmicos para calentar agua o
+            proporcionar calefacción.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-orange-600">
+            ¿Cómo funcionan los sistemas solares térmicos?
+          </h4>
+          <p class="text-justify">
+            Consisten en un captador solar que calienta el agua circulante,
+            almacenándola en un depósito aislado para su uso en agua caliente
+            sanitaria (ACS) y otros procesos.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-orange-600">
+            ¿Es posible reemplazar una terma eléctrica o a gas por una solar?
+          </h4>
+          <p class="text-justify">
+            Sí, los sistemas solares pueden sustituir o complementar los
+            sistemas convencionales. Si tienes una terma eléctrica o a gas,
+            puedes conectar la salida de la terma solar a su entrada. Así, el
+            agua ingresará pre-calentada, reduciendo o eliminando la necesidad
+            de activar el sistema eléctrico o de gas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-4 sm:p-6 bg-orange-100 rounded-lg shadow-md">
+      <h3
+        class="text-xl sm:text-2xl font-semibold mb-4 sm:mb-6 text-orange-500"
+      >
+        Beneficios y Consideraciones
+      </h3>
+      <div class="space-y-4 sm:space-y-6">
+        <div>
+          <h4 class="font-semibold text-orange-600">
+            ¿Qué beneficios tiene instalar energía solar térmica?
+          </h4>
+          <p class="text-justify">
+            Además de ahorrar en costos energéticos, reduce la emisión de gases
+            de efecto invernadero, mejora la calidad del aire y aumenta el valor
+            de la propiedad.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-orange-600">
+            ¿En cuánto tiempo se recupera la inversión?
+          </h4>
+          <p class="text-justify">
+            El periodo de recuperación varía por la ubicación y el sistema
+            reemplazado, pero generalmente es de 1 a 2 años, dependiendo de las
+            condiciones locales y del ahorro generado.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-semibold text-orange-600">
+            ¿Y qué ocurre de noche o en días nublados?
+          </h4>
+          <p class="text-justify">
+            El agua mantiene su temperatura gracias al aislamiento del depósito,
+            y para días nublados o de alta demanda, se puede utilizar un sistema
+            de apoyo convencional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .custom-shadow {
+    box-shadow:
+      0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 -2px 4px -2px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+</style>

@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import wap from "@/images/icons/whats.svg";
+---
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solstac</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@latest/dist/flowbite.min.js"></script>
+    <style>
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            border-radius: 50%;
+            padding: 15px 20px;
+            font-size: 30px;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease-out; /* Transición suave para hover */
+        }
+
+        .whatsapp-button:hover {
+            transform: scale(1.10); /* Efecto de crecimiento al pasar el mouse */
+        }
+
+        .whatsapp-icon {
+            height: 60px; /* Establecer el tamaño del icono de WhatsApp */
+            width: 60px;
+            border-radius: 20%; /* Hacer el icono circular */
+        }
+    </style>
+</head>
+
+<a href="https://wa.me/+51949148120" target="_blank" class="whatsapp-button">
+    <Image src={wap} alt="WhatsApp" class="whatsapp-icon" loading="eager"/>
+</a>
+</html>

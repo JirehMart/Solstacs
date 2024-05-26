@@ -1,0 +1,23 @@
+---
+import 'flowbite';
+import Layout from '../layouts/Layout.astro';
+import InitPhotoswipe from "@/components/initPhotoswipe.svelte";
+import ProdCol from '../components/ProdCol.astro';
+import Foot from '@/components/Foot.astro';
+
+---
+
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+<Layout title="Solstac - Productos Termas" />
+  <div class="CarouselWrapper">
+      <div>
+        <ProdCol />
+        <InitPhotoswipe client:load />
+        <slot />
+        <Foot />  
+
+      </div>
+  </div>
+
+
+<style></style>

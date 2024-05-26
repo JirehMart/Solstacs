@@ -1,0 +1,16 @@
+---
+import "flowbite";
+import Layout from "@/layouts/Layout.astro";
+import Foot from "@/components/Foot.astro";
+import EnergSol from "@/components/EnergSol.astro";
+import Lightbox from "@/components/lightbox.svelte";
+---
+<Layout title="Solstac - Energía Solar" />
+  <div class="CarouselWrapper">
+    <EnergSol/>
+    <Lightbox client:load />
+  </div>
+  <Foot />
+  
+
+<style></style>

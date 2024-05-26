@@ -1,0 +1,23 @@
+---
+import 'flowbite';
+import Layout from "../layouts/Layout.astro";
+import Product from "../components/Product.astro";
+import ProductFilter from "@/components/productFilter.svelte";
+import Foot from "@/components/Foot.astro";
+
+---
+
+
+<Layout title="Solstac - Productos" />
+  <div class="CarouselWrapper">
+    <Product/>
+    <ProductFilter client:load />
+    <Foot />  
+    <div>
+      </div>
+      
+  </div>
+  
+
+
+<style></style>

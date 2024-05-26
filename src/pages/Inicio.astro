@@ -1,0 +1,18 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Lightbox from "@/components/lightbox.svelte";
+import Carousel from "@/components/carousel.svelte";
+import Galeria from "@/components/Galeria.astro";
+import About from "@/components/About.astro";
+import Caru from "@/components/Caru.astro";
+import Foot from "@/components/Foot.astro";
+---
+
+<Layout title="Solstac">
+	<Caru />
+	<Carousel client:load />
+	<About />
+	<Galeria />
+	<Lightbox client:load />
+  </Layout>
+  <Foot />
